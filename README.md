@@ -73,7 +73,8 @@ export default function LandingPage() {
 | `particleColors` | `string[]` | cyan/indigo palette | Colours used for burst and splash particles. |
 | `depthZones` | `Array<[number, number]>` | `[[0.17,0.25],[0.38,0.46],[0.59,0.67]]` | Page fractions where the thread dims to simulate depth. |
 | `splash` | `boolean` | `true` | Whether to show the bottom splash effect. |
-| `zIndex` | `number` | `2` | z-index of the SVG layer. Works with `mix-blend-mode: screen`. |
+| `zIndex` | `number` | `0` | z-index of the SVG layer. Keep at 0 and make parent sections transparent so the glow shows through. |
+| `hueShift` | `number` | `180` | Hue rotation (degrees) applied to the thread at full scroll. 0 = no shift, 180 = complementary colour. |
 
 ---
 
@@ -212,7 +213,8 @@ export default function LandingPage() {
 | `particleColors` | `string[]` | palette cyan/indigo | Couleurs des particules de burst et de splash. |
 | `depthZones` | `Array<[number, number]>` | `[[0.17,0.25],[0.38,0.46],[0.59,0.67]]` | Fractions de la page où le fil s'atténue pour simuler la profondeur. |
 | `splash` | `boolean` | `true` | Afficher l'effet splash en bas de page. |
-| `zIndex` | `number` | `2` | z-index du calque SVG. Fonctionne avec `mix-blend-mode: screen`. |
+| `zIndex` | `number` | `0` | z-index du calque SVG. Gardez à 0 et rendez les sections parentes transparentes. |
+| `hueShift` | `number` | `180` | Rotation de teinte (degrés) appliquée au fil au scroll complet. 0 = pas de changement, 180 = couleur complémentaire. |
 
 ---
 
